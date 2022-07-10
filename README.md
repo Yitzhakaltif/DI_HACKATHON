@@ -1,2 +1,2 @@
 # DI_HACKATHON
-This is the repo. of Yitzhak Altif, and Jad Cohen's Hackathon project.
+This is the repo. of Yitzhak Altif's Hackathon project.
