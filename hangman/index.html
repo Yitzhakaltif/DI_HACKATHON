@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  <title>Hangman Game</title>
+</head>
+<body>
+<div class="container">
+ <h1 class="text-center">Hangman Game</h1>
+ <h3 class = "text-center">Type: Guess The Hidden Movie's Name</h3>
+ <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+ <div class="text-center">
+    <img id='hangmanPic' src="./images/3amood.jpg" alt="">
+    <p><strong>Use the letters below to guess the movie's name</strong> </p>
+    <p><strong>... PS: CHOOSE WISELY</strong></p>
+    <p id="wordContent"><strong>The Name to be guessed goes here</strong></p>
+    <div id="keyboard"></div><br>
+    <div id="keyboard2"></div>
+    <button class="btn btn-info" onClick="reset()">Start/Restart</button>
+  </div> 
+ </div>
+</div>
+<section>
+  <h2>Yitzhak Altif HangMan Game</h2>
+</section>
+<script src="script.js"></script> 
+</body>
+</html>
