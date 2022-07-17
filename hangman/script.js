@@ -11,6 +11,11 @@ let movies = [
 ]
 
 let answer = '';
+
+// -------------
+// use const if the variable value is constant
+// -------------
+
 let maxWrong = 6;
 let mistakes = 0;
 let guessed = [];
@@ -19,6 +24,11 @@ let wordStatus = "_"
 function randomWord() {
     answer = movies[Math.floor(Math.random() * movies.length)];
 }
+
+// ----------
+// use addeventlistener instead of onclick
+// ----------
+
 function generateButtons() {
     let buttonsHTML = "abcdefghijklmnopqrstuvwxyz".split("").map(letter =>
       `
@@ -33,6 +43,7 @@ function generateButtons() {
   
     document.getElementById('keyboard').innerHTML = buttonsHTML;
   }
+  
   function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
     document.getElementById(chosenLetter).setAttribute('disabled', true);
@@ -67,7 +78,6 @@ function generateButtons() {
   
   function guessedWord() {
     wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
-  
     document.getElementById('wordContent').innerHTML = wordStatus;
   }
   
